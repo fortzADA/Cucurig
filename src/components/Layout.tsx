@@ -26,6 +26,9 @@ export function Layout() {
           <NavLink to="/florists/cucurig">
             <span>02</span>The shop
           </NavLink>
+          <NavLink to="/gallery">
+            <span>03</span>Gallery
+          </NavLink>
         </nav>
         <div className="spine-foot">
           <p className="quiet">Los Angeles</p>
@@ -75,6 +78,9 @@ export function Layout() {
             <NavLink to="/florists/cucurig" onClick={() => setOpen(false)}>
               <span>02</span>The shop
             </NavLink>
+            <NavLink to="/gallery" onClick={() => setOpen(false)}>
+              <span>03</span>Gallery
+            </NavLink>
             <p className="quiet">Los Angeles</p>
             <p className="quiet">
               {openNow ? "Same-morning orders are open until 2:00 p.m. Pacific." : "Today’s bench is closed."}
@@ -90,6 +96,7 @@ export function Layout() {
             <div className="footer-links">
               <Link to="/shop">Market</Link>
               <Link to="/florists/cucurig">The shop</Link>
+              <Link to="/gallery">Gallery</Link>
             </div>
           </div>
           <p className="credit">

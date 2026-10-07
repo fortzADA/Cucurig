@@ -6,6 +6,7 @@ import { Cart } from "./pages/Cart";
 import { Checkout } from "./pages/Checkout";
 import { Confirmation } from "./pages/Confirmation";
 import { Florist } from "./pages/Florist";
+import { Gallery } from "./pages/Gallery";
 import { Florists } from "./pages/Florists";
 import { Home } from "./pages/Home";
 import { Product } from "./pages/Product";
@@ -44,6 +45,7 @@ export function App() {
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="shop" element={<Shop />} />
+            <Route path="gallery" element={<Gallery />} />
             <Route path="shop/:id" element={<Product />} />
             <Route path="florists" element={<Florists />} />
             <Route path="florists/:id" element={<Florist />} />
